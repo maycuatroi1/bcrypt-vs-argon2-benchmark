@@ -1,6 +1,10 @@
 # bcrypt vs Argon2id: empirical CPU/GPU benchmark
 
-Reproducible benchmark code measuring password hashing speed and GPU crack throughput for bcrypt and Argon2id. Companion code for the omelet.tech blog post: [bcrypt cost=12 mất 187ms để hash. GPU bẻ nó 95 lần nhanh hơn CPU. Argon2 thì khác](https://omelet.tech/).
+Reproducible benchmark code measuring password hashing speed and GPU crack throughput for bcrypt and Argon2id.
+
+**Full analysis (in Vietnamese)**: [bcrypt cost=12 mất 187ms để hash. GPU bẻ nó 95 lần nhanh hơn CPU. Argon2 thì khác](https://www.omelet.tech/bcrypt-vs-argon2-toc-do-la-diem-yeu/) on omelet.tech. The blog post walks through the mechanism (Blowfish key schedule, memory-hard functions, Argon2 design), interprets the numbers below, and explains why hashcat still does not implement Argon2 nine years after Argon2 won PHC.
+
+This repo is the empirical layer. The blog is the explanatory layer. Read together.
 
 ## What this measures
 

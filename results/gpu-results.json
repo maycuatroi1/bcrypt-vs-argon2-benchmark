@@ -1,0 +1,14 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "gpu_memory_gb": 8,
+  "hashcat_version": "v7.0.0",
+  "cuda_version": "13.1",
+  "results": [
+    {"algo": "bcrypt", "cost": 5, "label": "default benchmark -b", "hashes_per_sec": 63105},
+    {"algo": "bcrypt", "cost": 8, "label": "bcrypt cost=8",  "hashes_per_sec": 8168},
+    {"algo": "bcrypt", "cost": 10, "label": "bcrypt cost=10", "hashes_per_sec": 2022},
+    {"algo": "bcrypt", "cost": 12, "label": "bcrypt cost=12", "hashes_per_sec": 507},
+    {"algo": "bcrypt", "cost": 14, "label": "bcrypt cost=14", "hashes_per_sec": 126},
+    {"algo": "argon2id", "note": "hashcat 7.0.0 mainline does not include module_70300 (Argon2id). See discussion below."}
+  ]
+}

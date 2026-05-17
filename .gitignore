@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+hashes/
+results/hashcat-*.txt
+.venv/
+.DS_Store

@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "samples_per_config": 30,
+    "bcrypt_version": "4.3.0",
+    "argon2_cffi_version": "25.1.0"
+  },
+  "results": [
+    {
+      "algo": "bcrypt",
+      "params": {
+        "cost": 8
+      },
+      "label": "bcrypt cost=8",
+      "ms_p50": 11.94,
+      "ms_p95": 12.22,
+      "ms_mean": 11.93,
+      "ms_stdev": 0.21,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 83.78,
+      "samples": 30
+    },
+    {
+      "algo": "bcrypt",
+      "params": {
+        "cost": 10
+      },
+      "label": "bcrypt cost=10",
+      "ms_p50": 46.4,
+      "ms_p95": 48.66,
+      "ms_mean": 46.78,
+      "ms_stdev": 1.18,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 21.55,
+      "samples": 30
+    },
+    {
+      "algo": "bcrypt",
+      "params": {
+        "cost": 12
+      },
+      "label": "bcrypt cost=12",
+      "ms_p50": 186.74,
+      "ms_p95": 191.02,
+      "ms_mean": 186.97,
+      "ms_stdev": 2.89,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 5.36,
+      "samples": 30
+    },
+    {
+      "algo": "bcrypt",
+      "params": {
+        "cost": 14
+      },
+      "label": "bcrypt cost=14",
+      "ms_p50": 764.05,
+      "ms_p95": 773.99,
+      "ms_mean": 760.28,
+      "ms_stdev": 13.37,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 1.31,
+      "samples": 30
+    },
+    {
+      "algo": "argon2id",
+      "params": {
+        "m_kb": 19456,
+        "t": 2,
+        "p": 1
+      },
+      "label": "argon2id m=19MB t=2 p=1",
+      "ms_p50": 19.29,
+      "ms_p95": 21.85,
+      "ms_mean": 19.54,
+      "ms_stdev": 1.75,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 51.83,
+      "samples": 30
+    },
+    {
+      "algo": "argon2id",
+      "params": {
+        "m_kb": 65536,
+        "t": 3,
+        "p": 4
+      },
+      "label": "argon2id m=64MB t=3 p=4",
+      "ms_p50": 50.48,
+      "ms_p95": 59.8,
+      "ms_mean": 52.22,
+      "ms_stdev": 4.64,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 19.81,
+      "samples": 30
+    },
+    {
+      "algo": "argon2id",
+      "params": {
+        "m_kb": 262144,
+        "t": 3,
+        "p": 4
+      },
+      "label": "argon2id m=256MB t=3 p=4",
+      "ms_p50": 210.07,
+      "ms_p95": 241.65,
+      "ms_mean": 216.89,
+      "ms_stdev": 17.04,
+      "peak_mem_kb_delta": 0,
+      "hashes_per_sec_cpu": 4.76,
+      "samples": 30
+    }
+  ]
+}

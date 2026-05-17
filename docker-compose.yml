@@ -1,0 +1,11 @@
+services:
+  benchmark:
+    build: .
+    image: bcrypt-vs-argon2-bench:latest
+    volumes:
+      - ./results:/benchmark/results
+      - ../charts:/benchmark/charts
+    cpus: '4.0'
+    mem_limit: 4g
+    environment:
+      SAMPLES: '30'
